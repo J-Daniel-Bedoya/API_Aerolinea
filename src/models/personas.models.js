@@ -23,9 +23,10 @@ const Personas = db.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    recidencia: {
-      type: DataTypes.STRING,
+    idPaisRecidencia: {
+      type: DataTypes.INTEGER,
       allowNull: false,
+      field: "id_pais_recidencia"
     },
     genero: {
       type: DataTypes.STRING,

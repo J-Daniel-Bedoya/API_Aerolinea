@@ -4,11 +4,13 @@ const {
   readRecerva,
   createRecerva,
   updateRecerva,
+  deleteRecerva,
 } = require("../controllers");
 
-// router.get("/recerva", readRecerva);
-// router.post("/recerva", createRecerva);
-// router.put("/recerva/:id", updateRecerva);
+router.get("/recerva", readRecerva);
+router.post("/recerva", createRecerva);
+router.put("/recerva/:id", updateRecerva);
+router.delete("/recerva/:id", deleteRecerva);
 
 
 module.exports = router;

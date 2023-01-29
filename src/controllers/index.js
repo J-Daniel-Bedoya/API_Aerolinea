@@ -3,6 +3,7 @@ const {
   createPais,
   deletePais,
 } = require("./paises.controllers");
+
 const {
   readPersonas,
   readPersona,
@@ -10,6 +11,15 @@ const {
   updatePersona,
   deletePersona,
 } = require("./personas.controllers");
+
+const {
+  readRecerva,
+  createRecerva,
+  updateRecerva,
+  deleteRecerva,
+} = require("./recervas.controllers");
+
+
 module.exports = {
   readPais,
   createPais,
@@ -19,4 +29,8 @@ module.exports = {
   createPersona,
   updatePersona,
   deletePersona,
+  readRecerva,
+  createRecerva,
+  updateRecerva,
+  deleteRecerva,
 }

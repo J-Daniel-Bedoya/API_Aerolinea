@@ -16,18 +16,36 @@ const Recervas = db.define(
       allowNull: false,
       field: "tipo_vuelo"
     },
+    idPaisOrigen: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      field: "id_pais_origen"
+    },
+    idPaisDestino: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      field: "id_pais_destino"
+    },
     salida: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     regreso: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
-    // personas: {
-    //   type: DataTypes.ARRAY(DataTypes.INTEGER),
-    //   allowNull: false,
-    // },
+    adultos: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    niños: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    bebes: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    }
   }
 );
 

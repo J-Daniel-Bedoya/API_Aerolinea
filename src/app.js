@@ -7,7 +7,7 @@ const initModels = require("./models/initModels");
 const { 
   RouterPaises,
   RouterPersonas,
-  // RouterRecervas,
+  RouterRecervas,
   // RouterTarifas,
   // RouterTikets, 
 } = require("./routes");
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
   
 app.use("/api/v1", RouterPaises);
 app.use("/api/v1", RouterPersonas);
-// app.use("/api/v1", RouterRecervas);
+app.use("/api/v1", RouterRecervas);
 // app.use("/api/v1", RouterTarifas);
 // app.use("/api/v1", RouterTikets);
 

@@ -16,8 +16,9 @@ const readPersonas = async(req, res, next) => {
 const readPersona = async(req, res, next) => {
   try {
     const { id } = req.params;
+    console.log(id)
     const result = await PersonasServices.getPersona(id);
-    res.josn(result);
+    res.json(result);
   } catch (error) {
     next({
       status: 400,
@@ -56,7 +57,7 @@ const updatePersona = async(req, res, next) => {
 const deletePersona = async(req, res, next) => {
   try {
     const { id } = req.params;
-    const result = await PersonasServices.deletePersona(id);
+    await PersonasServices.deletePersona(id);
     res.json({message: "Persona eliminada exitosamente"});
   } catch (error) {
     next({
