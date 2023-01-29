@@ -20,7 +20,7 @@ const Personas = db.define(
       allowNull: false,
     },
     edad: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     recidencia: {
@@ -35,11 +35,9 @@ const Personas = db.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
+  },{
+    timestamps: false
   }
 );
 
 module.exports = Personas;
-/*
-  genero string
-  puesto string
-*/
