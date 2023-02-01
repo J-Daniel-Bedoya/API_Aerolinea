@@ -12,11 +12,11 @@ const initModels = () => {
   Personas.belongsTo(Paises, {as: "pais_recidencia", foreignKey: "id_pais_recidencia"});
   Paises.hasMany(Personas, {as: "recidencia", foreignKey: "id_pais_recidencia"});
 
-  Tikets.belongsTo(Personas, {as: "tiket_persona", foreignKey: "persona_id"});
-  Personas.hasMany(Tikets, {as: "persona", foreignKey: "persona_id"});
+  Tikets.belongsTo(Personas, {as: "persona", foreignKey: "id_personas"});
+  Personas.hasMany(Tikets, {as: "tiket_persona", foreignKey: "id_personas"});
 
-  Tarifas.belongsTo(Tikets, { as: "tiket_tarifa", foreignKey: "tarifa_id" });
-  Tikets.hasMany(Tarifas, { as: "tarifa", foreignKey: "tarifa_id" });
+  Tikets.belongsTo(Tarifas, { as: "tiket_tarifa", foreignKey: "id_costo" });
+  Tarifas.hasMany(Tikets, { as: "tarifas", foreignKey: "id_costo" });
 
 };
 

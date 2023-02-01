@@ -11,9 +11,10 @@ const Tikets = db.define(
       autoIncrement: true,
       allowNull: false,
     },
-    costo: {
+    idCosto: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      field: "id_costo"
     },
     codigoVuelo: {
       type: DataTypes.STRING,
@@ -25,10 +26,10 @@ const Tikets = db.define(
       allowNull: false,
       field: "numero_recerva"
     },
-    idPersona: {
-      type: DataTypes.STRING,
+    idPersonas: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      field: "id_persona"
+      field: "id_personas"
     },
   }
 );

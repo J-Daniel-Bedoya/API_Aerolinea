@@ -7,10 +7,10 @@ const {
   deleteTarifa,
 } = require("../controllers");
 
-// router.get("/tarifa", readTarifa);
-// router.post("/tarifa", createTarifa);
-// router.put("/tarifa", updateTarifa);
-// router.delete("/tarifa", deleteTarifa);
+router.get("/tarifa", readTarifa);
+router.post("/tarifa", createTarifa);
+router.put("/tarifa", updateTarifa);
+router.delete("/tarifa", deleteTarifa);
 
 
 module.exports = router;

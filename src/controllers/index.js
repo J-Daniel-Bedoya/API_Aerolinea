@@ -19,6 +19,20 @@ const {
   deleteRecerva,
 } = require("./recervas.controllers");
 
+const {
+  readTarifa,
+  createTarifa,
+  updateTarifa,
+  deleteTarifa,
+} = require("./tarifas.controllers");
+
+const {
+  readTikets,
+  readTiket,
+  createTiket,
+  updateTiket,
+  deleteTiket,
+} = require("./tikets.controllers");
 
 module.exports = {
   readPais,
@@ -26,11 +40,24 @@ module.exports = {
   deletePais,
   readPersonas,
   readPersona,
+
   createPersona,
   updatePersona,
   deletePersona,
+
   readRecerva,
   createRecerva,
   updateRecerva,
   deleteRecerva,
+
+  readTarifa,
+  createTarifa,
+  updateTarifa,
+  deleteTarifa,
+
+  readTikets,
+  readTiket,
+  createTiket,
+  updateTiket,
+  deleteTiket,
 }

@@ -8,8 +8,8 @@ const {
   RouterPaises,
   RouterPersonas,
   RouterRecervas,
-  // RouterTarifas,
-  // RouterTikets, 
+  RouterTarifas,
+  RouterTikets, 
 } = require("./routes");
 
 const app = express();
@@ -35,8 +35,8 @@ app.get('/', (req, res) => {
 app.use("/api/v1", RouterPaises);
 app.use("/api/v1", RouterPersonas);
 app.use("/api/v1", RouterRecervas);
-// app.use("/api/v1", RouterTarifas);
-// app.use("/api/v1", RouterTikets);
+app.use("/api/v1", RouterTarifas);
+app.use("/api/v1", RouterTikets);
 
 
 app.use(handleError);
