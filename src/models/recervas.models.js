@@ -17,7 +17,7 @@ const Recervas = db.define(
       field: "tipo_vuelo"
     },
     idPaisOrigen: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       field: "id_pais_origen"
     },
