@@ -1,6 +1,18 @@
 const { RecervasServices } = require("../services");
 
 
+const readRecervas = async(req, res, next) => {
+  try {
+    const result = await RecervasServices.getRecervas();
+    res.json(result);
+  } catch (error) {
+    next({
+      status: 400,
+      errorContent: error,
+      message: "Faltan datos",
+    });
+  }
+}
 const readRecerva = async(req, res, next) => {
   try {
     const { id } = req.params;
@@ -56,6 +68,7 @@ const deleteRecerva = async(req, res, next) => {
 }
 
 module.exports = {
+  readRecervas,
   readRecerva,
   createRecerva,
   updateRecerva,

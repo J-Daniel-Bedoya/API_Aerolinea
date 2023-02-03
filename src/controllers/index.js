@@ -13,6 +13,7 @@ const {
 } = require("./personas.controllers");
 
 const {
+  readRecervas,
   readRecerva,
   createRecerva,
   updateRecerva,
@@ -45,6 +46,7 @@ module.exports = {
   updatePersona,
   deletePersona,
 
+  readRecervas,
   readRecerva,
   createRecerva,
   updateRecerva,

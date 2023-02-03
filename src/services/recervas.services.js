@@ -3,6 +3,14 @@ const { Recervas } = require("../models")
 
 class RecervasServices {
 
+  static async getRecervas() {
+    try {
+      const recerva = await Recervas.findAll()
+      return recerva;
+    } catch (error) {
+      throw(error)
+    }
+  }
   static async getRecerva(id) {
     try {
       const recerva = await Recervas.findOne({
