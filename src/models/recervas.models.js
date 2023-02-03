@@ -16,15 +16,15 @@ const Recervas = db.define(
       allowNull: false,
       field: "tipo_vuelo"
     },
-    idPaisOrigen: {
+    paisOrigen: {
       type: DataTypes.STRING,
       allowNull: false,
-      field: "id_pais_origen"
+      field: "pais_origen"
     },
-    idPaisDestino: {
+    paisDestino: {
       type: DataTypes.STRING,
       allowNull: false,
-      field: "id_pais_destino"
+      field: "pais_destino"
     },
     salida: {
       type: DataTypes.STRING,
