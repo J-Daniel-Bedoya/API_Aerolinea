@@ -22,7 +22,7 @@ const Recervas = db.define(
       field: "id_pais_origen"
     },
     idPaisDestino: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       field: "id_pais_destino"
     },
