@@ -11,28 +11,33 @@ const Personas = db.define(
       autoIncrement: true,
       allowNull: false,
     },
-    name: {
+    firstName: {
       type: DataTypes.STRING,
       allowNull: false,
+      field: 'first_name'
     },
-    cel: {
+    lastName: {
       type: DataTypes.STRING,
       allowNull: false,
+      field: 'last_name'
     },
     edad: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    idPaisRecidencia: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      field: "id_pais_recidencia"
-    },
-    genero: {
+    paisRecidencia: {
       type: DataTypes.STRING,
       allowNull: false,
+      field: "pais_recidencia"
     },
-    puesto: {
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isEmail: true
+      }
+    },
+    genero: {
       type: DataTypes.STRING,
       allowNull: false,
     },
