@@ -11,7 +11,7 @@ const Paises = db.define(
       autoIncrement: true,
       allowNull: false,
     },
-    pais: {
+    nombre: {
       type: DataTypes.STRING,
       allowNull: false,
     },
