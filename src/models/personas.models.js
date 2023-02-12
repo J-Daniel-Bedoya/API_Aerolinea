@@ -11,12 +11,12 @@ const Personas = db.define(
       autoIncrement: true,
       allowNull: false,
     },
-    firstName: {
+    nombres: {
       type: DataTypes.STRING,
       allowNull: false,
       field: 'first_name'
     },
-    lastName: {
+    apellidos: {
       type: DataTypes.STRING,
       allowNull: false,
       field: 'last_name'
