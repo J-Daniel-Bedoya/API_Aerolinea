@@ -14,12 +14,10 @@ const Personas = db.define(
     nombres: {
       type: DataTypes.STRING,
       allowNull: false,
-      field: 'first_name'
     },
     apellidos: {
       type: DataTypes.STRING,
       allowNull: false,
-      field: 'last_name'
     },
     edad: {
       type: DataTypes.INTEGER,
