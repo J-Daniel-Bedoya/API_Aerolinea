@@ -12,7 +12,7 @@ router.get("/tiket", readTikets);
 router.get("/tiket/:id", readTiket);
 router.post("/tiket", createTiket);
 router.put("/tiket", updateTiket);
-router.delete("/tiket", deleteTiket);
+router.delete("/tiket", deleteTiket); 
 
 
 module.exports = router;
