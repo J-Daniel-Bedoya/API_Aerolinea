@@ -13,7 +13,7 @@ const Personas = db.define(
     },
     nombres: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false, 
     },
     apellidos: {
       type: DataTypes.STRING,
