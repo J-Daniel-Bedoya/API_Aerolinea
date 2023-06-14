@@ -39,5 +39,5 @@ app.use("/api/v1", RouterTarifas);
 app.use("/api/v1", RouterTikets);
 
 
-app.use(handleError);
+app.use(handleError); 
 module.exports = app;
